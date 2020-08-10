@@ -71,7 +71,7 @@ body{
     border-radius: 15px;
     overflow: hidden;
     box-shadow: 0 0 15px rgb(63, 52, 52);
-    width: auto;
+    width: 70%;
 }
 
 thead{
@@ -83,8 +83,9 @@ thead{
     padding: 10px 8px;
 }
 
-img{
+.div img{
     width: 100%;
+    margin: 10px;
     border-radius: 10px;
     box-shadow: 0 0 8px white;
 }
@@ -97,9 +98,9 @@ b{
     color: tomato;
 }
 
-@media (max-width:900px){
+@media (max-width:600px){
     *{
-        font-size: 20px;
+        font-size: 10px;
     }
 
     .box{
@@ -112,17 +113,5 @@ b{
         "image3"
         "content4"
         "image4";
-    }
-}
-
-@media (max-width:600px){
-    *{
-        font-size: 15px;
-    }
-}
-
-@media (max-width:400px){
-    *{
-        font-size: 10px;
     }
 }
