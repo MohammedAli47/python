@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style2.css">
+    <title>Session-2</title>
+</head>
+<body>
+    <nav>
+        <div class="ham">
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
+        </div>
+        <ul class="nav-links">
+            <li><a href="index.html">Home Page</a></li>
+            <li><a href="s3.html">Next Session</a></li>
+            <li><a href="s1.html">Previous Session</a></li>
+        </ul>
+    </nav>
+    <div class="container">
+        <div class="box">
+            <div class="box1">
+                <img src="images/list.png" alt="">
+            </div>
+            <div class="box2">
+                <p><b>Lists : </b>A type of object in Python that is created with square brackets( <b>[ ]</b> ).</p>
+                <p>Because Python is a Zero-Indexed Language, we start any index with zero, one, two and so on.</p>
+                <p>Negative values in lists count from the end of the list so number [<b>-1</b>] is the last item in the list, [<b>-2</b>] is the one before it and so on.</p>
+                <p>A string can be treated as a list where the first letter is zero, the next is one and so on.</p>
+                <p>The <b>len()</b> function is used to know the length of a list.</p>
+            </div>
+            <div class="box3">
+                <img src="images/list_func.png" alt="">
+            </div>
+            <div class="box4">
+                <p><b>Some examples of list methods :</b></p>
+                <p>1-list.append( item ) <b>=></b> Adds the item at the end of the list.</p>
+                <p>2-list.insert( index number, item ) <b>=></b> Adds the item in the index number's place.</p>
+                <p>3-list.pop( ) <b>=></b> Removes the last item in the list.</p>
+                <p>4-list.pop( index number ) <b>=></b> Removes the item in the index number's place.</p>
+                <p>4-list.remove( existing item ) <b>=></b> Removes an existing item in the list ( if the item doesn't exist, it produces an error ).</p>
+                <p>5-list.reverse( ) <b>=></b> Reverses the list.</p>
+            </div>
+            <div class="box5">
+                <img src="images/dictionaries.png" alt="">
+            </div>
+            <div class="box6">
+                <p><b>Tuples : </b>Very similar to lists, except they're created using parentheses and cannot be changed ( you can't add or delete items ).</p>
+                <p><b>Dictionary : </b>They are created with curly braces and each item has a key and a value attached to it.</p>
+                <p><b>Some examples of dictionary methods :</b></p>
+                <p>1-dictionary.items() <b>=></b> Gets all items.</p>
+                <p>2-dictionary.keys() <b>=></b> Gets all keys.</p>
+                <p>3-dictionary.values() <b>=></b> Gets all values.</p>
+            </div>
+            <div class="box7">
+                <img src="" alt="">
+            </div>
+            <div class="box8">
+                <p><b>Loops : </b>We use them to repeat orders multiple times. There are two types of loops.</p>
+                    <p>1-<b>For loops : </b>The iterator is a variable that is not Pre-defined and increases in value during the loop.</p>
+                    <div class="loops">
+                        <p>for (<b>iterator</b>) in list/range() :</p>
+                        <b>(Indentation) Code</b>
+                    </div>
+                    <p>The range() function can take :</p>
+                    <p>1-One value and the iterator increases by one until that value</p>
+                    <p>2-Two values and the iterator increases by one starting from the first value until it reaches the second one</p>
+                    <p>3-Three values and the iterator increases by the third value starting from the first value until it reaches the second one.</p>
+                    <p>2-<b>While loops :</b></p>
+            </div>
+        </div>
+        <p>For more about functions, classes and methods used with things like lists, use the <b>dir()</b> function.</p>
+        <p>For more about something in Python, use the <b>help()</b> function.</p>
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>

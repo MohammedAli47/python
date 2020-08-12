@@ -3,195 +3,90 @@
     padding: 0;
     font-family: 'Poppins', sans-serif;
     box-sizing: border-box;
-    font-size: 20px;
-}
-
-body{
-    
-    background: rgba(0,0,0, 0.95);
-    color: rgb(255, 255, 255);
-}
-
-.box, .show{
-    margin: 1em;
-}
-
-nav{
-    background: rgb(192, 36, 36);
-    height: 3rem;
-    margin-top: -10px;
-}
-
-.nav-links{
-    display: flex;
-    list-style: none;
-    float: right;
-    height: 100%;
-    justify-content: space-around;
-    align-items: center;
-}
-
-.nav-links li{
-    margin-right: 50px;
-}
-
-.nav-links li a{
     text-decoration: none;
-    color: white;
-    font-size: 1.2rem;
-}
-
-.nav-links li a:hover{
-    background: white;
-    color: rgb(192, 36, 36);
-    border-radius: 30px;
-    padding: 0 10px 0 10px;
-    transition: 0.5s;
-}
-
-.box{
-    display: grid;
-    grid-gap: 1em;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    grid-template-areas: 
-    "content1 image1"
-    "image2 content2"
-    "content3 image3"
-    "image4 content4";
-}
-
-.box1{grid-area: image1;}
-.box2{grid-area: content1;}
-.box3{grid-area: image2;}
-.box4{grid-area: content2;}
-.box5{grid-area: image3;}
-.box6{grid-area: content3;}
-.box7{grid-area: image4;}
-.box8{grid-area: content4;}
-
-.box_{
-    display: grid;
-    grid-gap: 1em;
-    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
-}
-
-.box_ div{
-    box-shadow: 5px 5px 20px rgba(255,255,255, 0.1);
-    border-radius: 10px;
-}
-
-.box_ div p{
-    margin: 10px;
-}
-
-.content{
-    color: rgb(255, 255, 255);
-    background: rgb(192, 36, 36);
-    border-collapse: collapse;
-    margin: 0 auto;
-    font-size: 0.6em;
-    border-radius: 15px;
-    overflow: hidden;
-    box-shadow: 0 0 15px rgb(63, 52, 52);
-    width: 70%;
-}
-
-thead{
-    background: rgb(255, 255, 255);
-    color: rgb(192, 36, 36);
-}
-
-.content th, .content td{
-    padding: 10px 8px;
-}
-
-img{
-    width: 100%;
-    border-radius: 10px;
-    box-shadow: 0 0 8px white;
 }
 
 div{
-    margin-bottom: 10px;
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
-b{
-    color: tomato;
+h1{
+    z-index: 1000;
+    font-size: 8rem;
 }
 
-@media (max-width:768px){
-    .line{
-        width: 30px;
-        height: 3px;
-        margin: 5px;
-        background: white;
-    }
+h4{
+    z-index: 1000;
+    font-size: 2rem;
+}
 
-    nav{
-        position: relative;
-        margin-top: 0;
-    }
+a{
+    color: white;
+    padding: 5px 10px;
+    border-radius: 35px;
+}
 
-    .ham{
-        position:absolute;
-        cursor: pointer;
-        right: 5%;
-        top: 50%;
-        transform: translate(-5%,-50%);
-        z-index: 2;
-    }
+a:hover{
+    background: white;
+    color: black;
+    transition: 0.5s;
+}
 
-    .nav-links{
-        position: fixed;
-        flex-direction: column;
-        background: rgb(192, 36, 36);
-        width: 100%;
-        height: 100vh;
-        clip-path: circle(100px at 115% -15%);
-        transition: all 1s ease-out;
-        pointer-events: none;
-    }
+body{
+    color: rgb(255, 255, 255);
+    background: black;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+}
 
-    .nav-links.open{
-        clip-path: circle(1000px at 115% -15%);
-        pointer-events: all;
-    }
+section{
+    height: 100vh;
+}
 
-    .nav-links li{
+span{
+    position: absolute;
+    background: #d62828;
+    pointer-events: none;
+    animation: animate 5s linear infinite;
+}
+
+@keyframes animate{
+    0%{
+        transform: scale(0) translateY(0) rotate(0deg);
         opacity: 0;
     }
 
-    .nav-links li:nth-child(1){
-        transition: all 0.5s ease 0.2s;
-    }
-    .nav-links li:nth-child(2){
-        transition: all 0.5s ease 0.4s;
-    }
-    .nav-links li:nth-child(3){
-        transition: all 0.5s ease 0.6s;
-    }
-
-    li.fade{
+    10%{
         opacity: 1;
     }
 
-    *{
-        font-size: 15px;
+    90%{
+        opacity: 1;
     }
 
-    .box{
-        grid-template-areas: 
-        "content1"
-        "image1"
-        "content2"
-        "image2"
-        "content3"
-        "image3"
-        "content4"
-        "image4";
+    100%{
+        transform: scale(1) translateY(-500%) rotate(360deg);
+        opacity: 0;
+    }
+}
+
+@media (max-width: 768px){
+    a{
+        padding: 3px 8px;
     }
 
-    img{
-        width:90%;
+    h1{
+        font-size: 5rem;
+    }
+    
+    h4{
+        font-size: 2rem;
     }
 }
