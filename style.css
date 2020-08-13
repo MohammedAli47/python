@@ -54,7 +54,7 @@ span{
     position: absolute;
     background: #d62828;
     pointer-events: none;
-    animation: animate 5s linear infinite;
+    animation: animate 4s linear infinite;
 }
 
 @keyframes animate{
@@ -88,5 +88,23 @@ span{
     
     h4{
         font-size: 2rem;
+    }
+}
+
+@media (max-width: 400px){
+    a{
+        padding: 2px 6px;
+    }
+
+    h1{
+        font-size: 4rem;
+    }
+    
+    h4{
+        font-size: 1rem;
+    }
+
+    body{
+        overflow: hidden;
     }
 }

@@ -131,7 +131,7 @@ img{
 
     .nav-links li{
         opacity: 0;
-        margin-right: 0;
+        margin-left: 0;
     }
 
     .nav-links li:nth-child(1){
