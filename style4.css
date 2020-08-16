@@ -24,7 +24,10 @@ body{
     grid-template-areas: 
     "content1 image1"
     "image2 content2"
-    "content3 image3";
+    "content3 image3"
+    "image4 content4"
+    "content5 image5"
+    "image6 content6";
 }
 
 .box1{grid-area: image1;}
@@ -33,15 +36,12 @@ body{
 .box4{grid-area: content2;}
 .box5{grid-area: image3;}
 .box6{grid-area: content3;}
-
-.notes{
-    box-shadow: 5px 5px 20px rgba(255,255,255, 0.1);
-    border-radius: 10px;
-}
-
-.notes p{
-    margin: 10px;
-}
+.box7{grid-area: image4;}
+.box8{grid-area: content4;}
+.box9{grid-area: image5;}
+.box10{grid-area: content5;}
+.box11{grid-area: image6;}
+.box12{grid-area: content6;}
 
 nav{
     background: rgb(192, 36, 36);
@@ -80,14 +80,6 @@ b{
 }
 
 p{
-    margin-bottom: 10px;
-}
-
-.func p{
-    margin-bottom: 0;
-}
-
-.func{
     margin-bottom: 10px;
 }
 
@@ -165,6 +157,12 @@ img{
         "content2"
         "image2"
         "content3"
-        "image3";
+        "image3"
+        "content4"
+        "image4"
+        "content5"
+        "image5"
+        "content6"
+        "image6";
     }
 }
