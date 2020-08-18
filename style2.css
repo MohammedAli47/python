@@ -43,6 +43,15 @@ body{
 .box11{grid-area: image6;}
 .box12{grid-area: content6;}
 
+.range{
+    box-shadow: 0 0 10px rgba(255,255,255, 0.1);
+    border-radius: 10px;
+}
+
+.range p{
+    margin: 10px;
+}
+
 nav{
     background: rgb(192, 36, 36);
     height: 3rem;
@@ -156,7 +165,7 @@ img{
     }
 
     *{
-        font-size: 10px;
+        font-size: 11px;
     }
 
     .box{
