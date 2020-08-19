@@ -12,7 +12,7 @@ body{
 }
 
 .box, .show{
-    margin: 1rem 5rem;
+    margin: 1rem 2rem;
 }
 
 nav{
@@ -75,7 +75,7 @@ nav{
 }
 
 .box_ div{
-    box-shadow: 5px 5px 20px rgba(255,255,255, 0.1);
+    box-shadow: 10px 10px 20px rgba(255,255,255, 0.1);
     border-radius: 10px;
 }
 

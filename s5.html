@@ -31,14 +31,60 @@
                 <p><b>The __init__ method : </b>Also called the constructor, it the most important method in a class. When an object of the class is created using the class name as a function.</p>
                 <p>In classes, any method or function must have <b>self</b> as its first parameter.</p>
                 <p><b>Importing Classes : </b>We can write classes in separate files and import them to our program to avoid having too much code.</p>
-                <p></p>
+                <p>If the class name is too long, we can ( <b>import class_name as x</b> ) and use x as the new class name.</p>
+                <p>We can also ( <b>from class_name import function_name</b> ) to import a certain function from the class.</p>
             </div>
             <div class="box3">
                 <img src="images/form.png" alt="">
             </div>
-            <div class="box4"></div>
-            <div class="box5"></div>
-            <div class="box6"></div>
+            <div class="box4">
+                <p><b>String Formatting : </b>When we want to print variable values in strings, we can either write multiple strings and multiple variables next to each other with a plus sign ( + ) between them or use the placeholder method.</p>
+                <p><b>Placeholder Method : </b>The format( ) method is put after the text we want our values to go into, put the values inside the format( ) method and put the placeholders ( <b>{ index }</b> ) where we want them to be.</p>
+                <p>The values inside the format( ) method are considered as a list, so the first one has an index of 0, the second is 1 and so on.</p>
+                <p><b>We can also use extra characters inside placeholders :</b></p>
+                <p>1- To make the text centered, we use ( ^ )</p>
+                <p>2- To make the text shifted to the right, we use ( > )</p>
+                <p>3- To make the text shifted to the left, we use ( < )</p>
+                <p>A number after these characters specifics the space that the text will take.</p>
+                <p>Anything before these characters specifics what characters to put in the white spaces.</p>
+                <p>{ <b>index</b> : ( <b>Character or Number</b> ) ( <b>^ or > or <</b> ) ( <b>A number</b> ) }</p>
+            </div>
+            <div class="box5">
+                <img src="images/enumerate.png" alt="">
+            </div>
+            <div class="box6">
+                <p>The <b>enumerate( )</b> Function : This function sorts through all the list items and indices as well.</p>
+                <p>In the for loop, the first iterator ( i ) stores the index numbers and the second one ( item ) stores the items inside the list.</p>
+            </div>
+            <div class="box7">
+                <img src="images/json.png" alt="">
+            </div>
+            <div class="box8">
+                <p><b>JavaScript Object Notation ( JSON ) : </b>Files with data written in basic JavaScript syntax or in the form of dictionaries ( Keys : Values ).</p>
+                <p>Although they have JavaScript in their name ( Which is another programming language ), we can work with it with other programming languages like Python.</p>
+                <p>To do that, we first import the <b>json</b> module and use its functions.</p>
+                <p><b>Examples :</b></p>
+                <p>1- dumps() <b>=></b> Exports data from Python to json files.</p>
+                <p>2- loads() <b>=></b> Import data from json files to Python.</p>
+                <p>You can test json files like this One <b>=></b> <a href="https://jsonplaceholder.typicode.com/users" target="_blank" style="color: tomato;">Click Me!</a></p>
+            </div>
+            <div class="box9">
+                <img src="images/date.png" alt="">
+            </div>
+            <div class="box10">
+                <p><b>The datetime Module : </b>Has a lot of functions that help us calculate time.</p>
+                <p><b>Examples :</b></p>
+                <p>1- datetime.datetime.now( ) <b>=></b> Gets the current time.</p>
+                <p>2- strftime( %a ) <b>=></b> Gets the first three letters of the day.</p>
+                <p>3- strftime( %A ) <b>=></b> Gets the full day.</p>
+                <p>4- strftime( %H ) <b>=></b> Gets the hours.</p>
+                <p>5- strftime( %M ) <b>=></b> Gets the minutes.</p>
+                <p>6- strftime( %S ) <b>=></b> Gets the seconds.</p>
+                <p>7- strftime( %Y ) <b>=></b> Gets the full year.</p>
+                <p>8- strftime( %y ) <b>=></b> Gets the first two numbers of the year.</p>
+                <p>9- strftime( %m ) <b>=></b> Gets the month.</p>
+                <p>10- strftime( %d ) <b>=></b> Gets the day number.</p>
+            </div>
         </div>
     </div>
     <script src="app.js"></script>
